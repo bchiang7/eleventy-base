@@ -27,19 +27,25 @@ These builders are amazing—try them out to get your own Eleventy site in a few
 2. Build and host locally for local development (with hot-reload)
 
    ```shell
-   npx eleventy --serve
+   npm run serve
    ```
 
    Or build automatically when a template changes:
 
    ```shell
-   npx eleventy --watch
+   npm run watch
    ```
 
    Or in debug mode:
 
    ```shell
-   DEBUG=* npx eleventy
+   npm run debug
+   ```
+
+   Or build the site into `_site`:
+
+   ```shell
+   npm run build
    ```
 
 ### Implementation Notes
