@@ -67,6 +67,8 @@ module.exports = function (eleventyConfig) {
     ghostMode: false,
   });
 
+  eleventyConfig.setUseGitIgnore(false);
+
   return {
     templateFormats: ['md', 'njk', 'html', 'liquid'],
 

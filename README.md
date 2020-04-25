@@ -25,13 +25,7 @@ These builders are amazing—try them out to get your own Eleventy site in a few
 2. Build and host locally for local development (with hot-reload)
 
    ```shell
-   npm run serve
-   ```
-
-   Or build automatically when a template changes:
-
-   ```shell
-   npm run watch
+   npm start
    ```
 
    Or in debug mode:

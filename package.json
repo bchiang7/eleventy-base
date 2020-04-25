@@ -17,21 +17,32 @@
   },
   "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "scripts": {
-    "build": "eleventy",
+    "build": "npm run sass && eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && lint-staged"
-    }
+    "debug": "DEBUG=* eleventy",
+    "sass": "sass --style=compressed src/styles/styles.scss src/_includes/css/styles.css",
+    "watch:eleventy": "eleventy --serve",
+    "watch:sass": "npm run sass -- --watch",
+    "start": "npm-run-all sass --parallel watch:*"
   },
   "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
     "*.js": [
       "eslint --fix",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "sass": "^1.26.5"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
@@ -48,7 +59,7 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1"
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5"
   }
 }

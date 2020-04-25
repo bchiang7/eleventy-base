@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'prism-base16-monokai.dark';
+
 :root {
   --red: #c5004a;
   --darkred: #7f0036;
@@ -19,6 +22,11 @@ body {
   color: var(--darkgray);
   background-color: var(--white);
 }
+
+::selection {
+  background-color: $yellow;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
