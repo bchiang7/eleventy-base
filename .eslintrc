@@ -1,0 +1,10 @@
+{
+  "extends": "@upstatement",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

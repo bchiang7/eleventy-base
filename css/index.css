@@ -1,10 +1,10 @@
 :root {
-  --red: #C5004A;
-  --darkred: #7F0036;
+  --red: #c5004a;
+  --darkred: #7f0036;
   --lightgray: #e0e0e0;
-  --gray: #C0C0C0;
+  --gray: #c0c0c0;
   --darkgray: #333;
-  --navy: #17050F;
+  --navy: #17050f;
   --blue: #082840;
   --white: #fff;
 }
@@ -47,7 +47,7 @@ header {
   border-bottom: 1px dashed var(--lightgray);
 }
 header:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -61,7 +61,9 @@ table th {
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
+    'Nimbus Mono L', 'Courier New', Courier, monospace;
   line-height: 1.5;
 }
 pre {
@@ -80,7 +82,7 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   background-color: #f6f6f6;
 }
 .highlight-line {
@@ -92,7 +94,7 @@ pre {
 
 /* allow highlighting empty lines */
 .highlight-line:empty:before {
-  content: " ";
+  content: ' ';
 }
 /* avoid double line breaks when using display: block; */
 .highlight-line + br {
@@ -105,7 +107,7 @@ pre {
 }
 .highlight-line-active {
   background-color: #444;
-  background-color: hsla(0, 0%, 27%, .8);
+  background-color: hsla(0, 0%, 27%, 0.8);
 }
 .highlight-line-add {
   background-color: #45844b;
@@ -155,7 +157,7 @@ pre {
 .postlist-item:before {
   display: inline-block;
   pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
+  content: '' counter(start-from, decimal-leading-zero) '. ';
   line-height: 100%;
   text-align: right;
 }
@@ -178,7 +180,6 @@ pre {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
 }
-
 
 /* Tags */
 .tag {
@@ -212,7 +213,7 @@ a[href].tag:visited {
   font-family: sans-serif;
   text-decoration: none;
   font-style: normal;
-  margin-left: .1em;
+  margin-left: 0.1em;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
