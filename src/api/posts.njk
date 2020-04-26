@@ -1,0 +1,13 @@
+---
+permalink: /api/posts.json
+---
+[
+  {% for post in collections.posts  %}
+    {% set data = post.data %}
+    {
+      "title": "{{ data.title }}",
+      "description": "{{ data.description }}",
+      "url": "{{ post.url }}"
+    }{{ '' if loop.last else ',' }}
+  {% endfor  %}
+]
