@@ -9,12 +9,14 @@
       {% endif %}
     </a>
 
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">
+      {{ post.date | readableDate }}
+    </time>
 
     {% for tag in post.data.tags %}
       {%- if collections.tagList.indexOf(tag) != -1 -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
       {%- endif -%}
     {% endfor %}
   </li>

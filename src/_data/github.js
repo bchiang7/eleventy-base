@@ -1,15 +1,13 @@
 // FETCH GITHUB STARGAZERS COUNT (AND MORE) AT BUILD TIME
 // https://www.11ty.dev/docs/quicktips/eliminate-js/
 
-const fetch = require('node-fetch');
+const axios = require('axios');
 
-module.exports = async () =>
+module.exports = async () => {
   // GitHub API: https://developer.github.com/v3/repos/#get
-  fetch('https://api.github.com/repos/11ty/eleventy')
-    .then(res => res.json()) // node-fetch option to transform to json
-    .then(json =>
-      // prune the data to return only what we want
-      ({
-        stargazers: json.stargazers_count,
-      }),
-    );
+  const result = await axios.get('https://api.github.com/repos/11ty/eleventy');
+
+  return {
+    stargazers: result.data.stargazers_count,
+  };
+};
