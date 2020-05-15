@@ -21,7 +21,7 @@
     "watch": "eleventy --watch",
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "sass": "sass --style=compressed src/styles/styles.scss src/_includes/css/styles.css",
+    "sass": "sass --style=compressed src/styles/styles.scss _site/styles/styles.css",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "start": "npm-run-all sass --parallel watch:*"
