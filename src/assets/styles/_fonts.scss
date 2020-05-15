@@ -10,8 +10,5 @@
   }
 }
 
-// ---------------------------------------------------------------------------
-// GT America
-// ---------------------------------------------------------------------------
-
 @include font-face($family-name: Calibre, $file-name: Calibre/Calibre-Regular, $font-weight: 400);
+@include font-face($family-name: SF Mono, $file-name: SFMono/SFMono-Regular, $font-weight: 400);
