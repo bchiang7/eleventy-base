@@ -1,0 +1,17 @@
+@mixin font-face($family-name, $file-name, $font-weight: normal, $font-style: normal) {
+  @font-face {
+    $font-path: '/static/fonts/#{$file-name}';
+    font-family: '#{$family-name}';
+    font-display: auto;
+    src: url($font-path + '.woff') format('woff'), url($font-path + '.woff2') format('woff2'),
+      url($font-path + '.ttf') format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// GT America
+// ---------------------------------------------------------------------------
+
+@include font-face($family-name: Calibre, $file-name: Calibre/Calibre-Regular, $font-weight: 400);

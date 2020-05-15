@@ -1,3 +1,4 @@
+@import 'fonts';
 @import 'variables';
 @import 'prism-base16-monokai.dark';
 
@@ -18,7 +19,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'Calibre', system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
 }
