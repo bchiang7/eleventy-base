@@ -6,7 +6,7 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/assets/styles/app.css">
   </head>
 
   <body>
@@ -38,6 +38,8 @@
       {{ github.stargazers }} GitHub Stars ⭐️ |
       <a href="https://github.com/bchiang7/eleventy-base/blob/master/{{ page.inputPath }}">Edit this page on GitHub</a>
     </footer>
+
+    <script src="/assets/scripts/app.js" defer></script>
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
