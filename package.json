@@ -16,7 +16,6 @@
     "debug": "DEBUG=* eleventy",
     "start": "npm-run-all -p watch:*",
     "build": "NODE_ENV=production npm-run-all -s build:styles build:scripts build:eleventy",
-    "start:netlify": "NETLIFY=true CONTEXT=production URL=http://localhost:8888 netlify dev",
     "sass": "sass --style=compressed src/assets/styles/app.scss _site/assets/styles/app.css",
     "watch:eleventy": "eleventy --serve",
     "watch:styles": "npm run sass -- --watch",
