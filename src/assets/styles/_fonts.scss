@@ -10,5 +10,53 @@
   }
 }
 
+@include font-face($family-name: Calibre, $file-name: Calibre/Calibre-Light, $font-weight: 300);
+@include font-face(
+  $family-name: Calibre,
+  $file-name: Calibre/Calibre-LightItalic,
+  $font-weight: 300,
+  $font-style: italic
+);
 @include font-face($family-name: Calibre, $file-name: Calibre/Calibre-Regular, $font-weight: 400);
+@include font-face(
+  $family-name: Calibre,
+  $file-name: Calibre/Calibre-RegularItalic,
+  $font-weight: 400,
+  $font-style: italic
+);
+@include font-face($family-name: Calibre, $file-name: Calibre/Calibre-Medium, $font-weight: 500);
+@include font-face(
+  $family-name: Calibre,
+  $file-name: Calibre/Calibre-MediumItalic,
+  $font-weight: 500,
+  $font-style: italic
+);
+@include font-face($family-name: Calibre, $file-name: Calibre/Calibre-Semibold, $font-weight: 600);
+@include font-face(
+  $family-name: Calibre,
+  $file-name: Calibre/Calibre-SemiboldItalic,
+  $font-weight: 600,
+  $font-style: italic
+);
+
 @include font-face($family-name: SF Mono, $file-name: SFMono/SFMono-Regular, $font-weight: 400);
+@include font-face(
+  $family-name: SF Mono,
+  $file-name: SFMono/SFMono-RegularItalic,
+  $font-weight: 400,
+  $font-style: italic
+);
+@include font-face($family-name: SF Mono, $file-name: SFMono/SFMono-Medium, $font-weight: 500);
+@include font-face(
+  $family-name: SF Mono,
+  $file-name: SFMono/SFMono-MediumItalic,
+  $font-weight: 500,
+  $font-style: italic
+);
+@include font-face($family-name: SF Mono, $file-name: SFMono/SFMono-Semibold, $font-weight: 600);
+@include font-face(
+  $family-name: SF Mono,
+  $file-name: SFMono/SFMono-SemiboldItalic,
+  $font-weight: 600,
+  $font-style: italic
+);

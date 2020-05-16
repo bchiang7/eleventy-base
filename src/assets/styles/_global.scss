@@ -15,7 +15,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Calibre', system-ui, sans-serif;
+  font-family: $font-sans;
   color: var(--darkgray);
   background-color: var(--black);
 }
@@ -66,9 +66,7 @@ table th {
 
 pre,
 code {
-  font-family: 'SF Mono', Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-    'Nimbus Mono L', 'Courier New', Courier, monospace;
+  font-family: $font-mono;
   line-height: 1.5;
 }
 pre {
@@ -215,7 +213,7 @@ a[href].tag:visited {
 
 /* Direct Links / Markdown Headers */
 .direct-link {
-  font-family: sans-serif;
+  font-family: $font-sans;
   text-decoration: none;
   font-style: normal;
   margin-left: 0.1em;
