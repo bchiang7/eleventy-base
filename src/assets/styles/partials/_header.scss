@@ -1,0 +1,24 @@
+header {
+  @include flex-between;
+
+  h1 {
+    margin: 0;
+  }
+
+  .nav {
+    ul {
+      @include flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .nav-item {
+        margin: 10px;
+
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

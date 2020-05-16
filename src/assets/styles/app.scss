@@ -1,4 +1,8 @@
-@import 'fonts';
-@import 'variables';
-@import 'prism-base16-monokai.dark';
-@import 'global';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/global';
+@import 'base/markdown';
+@import 'base/prism-base16-monokai.dark';
+@import 'partials/header';
+@import 'partials/footer';
