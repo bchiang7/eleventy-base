@@ -16,3 +16,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+@mixin size($width, $height: $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin mq($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}

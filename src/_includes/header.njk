@@ -3,12 +3,28 @@
 
   {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
   <nav class="nav">
-    <ul>
+    <ul class="nav-items">
     {%- for entry in collections.all | eleventyNavigation %}
       <li class="nav-item{% if entry.url == page.url %} active{% endif %}">
         <a href="{{ entry.url | url }}">{{ entry.title }}</a>
       </li>
     {%- endfor %}
     </ul>
+
+    <div class="menu js-menu" aria-hidden="true">
+      <div class="menu-inner">
+        <ul>
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="nav-item{% if entry.url == page.url %} active{% endif %}">
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <button class="menu-toggle js-menu-toggle">
+      <span class="menu-hamburger"></span>
+    </button>
   </nav>
 </header>
