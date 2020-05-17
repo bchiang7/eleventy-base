@@ -66,6 +66,7 @@ header {
       color: inherit;
       border: 0;
       padding: 0;
+      z-index: 1;
       display: none;
 
       @include mq($sm) {
@@ -76,18 +77,15 @@ header {
       &:focus {
         .menu-hamburger {
           &:before {
-            transform: translate3d(0, -7px, 0);
+            transform: translate3d(0, -8px, 0);
           }
           &:after {
-            transform: translate3d(0, 7px, 0);
+            transform: translate3d(0, 8px, 0);
           }
         }
       }
 
-      &:focus {
-        outline: 0;
-      }
-
+      // When menu is open
       &.active {
         color: $c-white;
 
@@ -111,6 +109,8 @@ header {
         display: block;
         width: 100%;
         height: 2px;
+        border-radius: 2px;
+        transition: $hamburger-transition;
 
         &::before,
         &::after {
@@ -122,56 +122,18 @@ header {
           background: currentColor;
           content: '';
           transform-origin: 50% 50%;
+          border-radius: 2px;
+          transition: $hamburger-transition;
         }
 
         &::before {
-          transform: translate3d(0, -6px, 0);
+          transform: translate3d(0, -7px, 0);
         }
 
         &::after {
-          transform: translate3d(0, 6px, 0);
+          transform: translate3d(0, 7px, 0);
         }
       }
-    }
-  }
-}
-
-// menu-trigger hover styles for closed menu
-body:not(.js--menu-active) {
-  .nav__menu-trigger:hover,
-  .nav__menu-trigger:focus {
-    .nav__hamburger::before {
-      transform: translate3d(0, -7px, 0);
-    }
-
-    .nav__hamburger::after {
-      transform: translate3d(0, 7px, 0);
-    }
-  }
-}
-
-// menu-trigger styles for open menu
-.js--menu-active {
-  .nav__menu-trigger {
-    border-radius: 50%;
-
-    // &:hover,
-    // &:focus {
-    //   background: $c-bg;
-    //   color: $c-base;
-    // }
-  }
-
-  .nav__hamburger {
-    background: transparent;
-    left: 11px;
-    right: 11px;
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
     }
   }
 }
