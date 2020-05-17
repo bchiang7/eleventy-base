@@ -31,7 +31,7 @@ class Menu {
 
   init() {
     this.toggleBtn.addEventListener('click', () => this.onToggleClick());
-    this.menu.addEventListener('keydown', e => this.onKeydown(e));
+    document.addEventListener('keydown', e => this.onKeydown(e));
   }
 
   onToggleClick() {
