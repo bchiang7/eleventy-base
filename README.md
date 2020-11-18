@@ -1,6 +1,6 @@
 # Eleventy Base
 
-An [Eleventy](https://github.com/11ty/eleventy) starter based on [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog).
+An [Eleventy](https://github.com/11ty/eleventy) starter based on [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) adding Sass, custom webfonts, and JavaScript bundling with Parcel.
 
 ## Getting Started
 
