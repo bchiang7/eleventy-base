@@ -38,7 +38,7 @@
     }
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "sass": "^1.26.5"
   },
   "devDependencies": {
